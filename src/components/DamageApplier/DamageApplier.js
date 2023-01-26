@@ -5,12 +5,15 @@ import DifficultySelector from "./DifficultySelector/DifficultySelector"
 
 
 
-function NonArmorModifier(props){
+function DamageApplier(props){
 
-    const [FilteredDifficulty, setDifficulty] = useState('Easy')
+    const [FilteredDifficulty, setDifficulty] = useState("Easy")
+
+
     function DifficultyChangeHandler(DisplayedDifficulty){
         setDifficulty(DisplayedDifficulty)
         //missing stuff here. Just display for now
+        props.onDifficultySelection(DisplayedDifficulty)
     }
 
     return(
@@ -22,4 +25,4 @@ function NonArmorModifier(props){
 
 }
 
-export default NonArmorModifier
+export default DamageApplier

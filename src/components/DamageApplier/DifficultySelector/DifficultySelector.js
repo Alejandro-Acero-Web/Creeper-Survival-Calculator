@@ -9,6 +9,8 @@ function DifficultySelector(props) {
 
   function dropDownChangeHandler(event){
     props.onChangeDifficulty(event.target.value)
+    
+
   }
 
 
