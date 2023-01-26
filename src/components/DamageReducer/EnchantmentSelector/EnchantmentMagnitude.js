@@ -3,7 +3,7 @@ import React from "react";
 function EnchantmentMagnitude(props){
 
     function dropDownChangeHandler(event){
-        props.onChoiceChange(event.target.value)
+        props.onChoiceChange(event.target.value, props.section)
     }
 
 
