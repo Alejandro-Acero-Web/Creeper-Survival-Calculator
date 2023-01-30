@@ -87,3 +87,5 @@ function EnchantmentApplier(props){
     )
     
 }
+
+export default EnchantmentApplier
