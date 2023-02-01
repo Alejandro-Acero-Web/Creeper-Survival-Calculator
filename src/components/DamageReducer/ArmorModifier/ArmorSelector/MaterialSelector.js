@@ -36,16 +36,20 @@ function MaterialSelector(props){
         
     }
 
+    function MaterialSender(){
+        props.materialInfoFetcher(materialSelections)
+    }
+
 
     return(
-        <React.Fragment>
+        <div onChange={MaterialSender}>
             <div>Armor material</div>
             <MaterialOptions chosen={FilteredMaterial} onChoiceChange={MaterialChangeHandler} bodyPart='head'/>
             <MaterialOptions chosen={FilteredMaterial} onChoiceChange={MaterialChangeHandler} bodyPart='chest'/>
             <MaterialOptions chosen={FilteredMaterial} onChoiceChange={MaterialChangeHandler} bodyPart='leggings'/>
             <MaterialOptions chosen={FilteredMaterial} onChoiceChange={MaterialChangeHandler} bodyPart='boots'/>
             
-        </React.Fragment>
+        </div>
        
     )
 
