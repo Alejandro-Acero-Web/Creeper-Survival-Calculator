@@ -10,9 +10,33 @@ function MaterialSelector(props){
 
 
     const [FilteredMaterial, setMaterial] = useState('Diamond')
-    function MaterialChangeHandler(ChosenMaterial){
-        setMaterial(ChosenMaterial)
+
+
+    let materialSelections ={
+        'head':'none',
+        'chest':'none',
+        'leggings':'none',
+        'boots':'none'
     }
+
+    function MaterialChangeHandler(ChosenMaterial, bodyPart){
+        setMaterial(ChosenMaterial)
+        if (bodyPart === 'head'){
+            materialSelections['head']=ChosenMaterial
+        }
+        else if (bodyPart === 'chest'){
+            materialSelections['chest']=ChosenMaterial
+        }
+        else if (bodyPart === 'leggings'){
+            materialSelections['leggings']=ChosenMaterial
+        }
+        else if (bodyPart === 'boots'){
+            materialSelections['boots']=ChosenMaterial
+        }
+        
+    }
+
+
     return(
         <React.Fragment>
             <div>Armor material</div>

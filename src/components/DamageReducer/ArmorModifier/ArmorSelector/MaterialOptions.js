@@ -9,7 +9,7 @@ import MaterialVisualizer from "./MaterialVisualizer"
 function MaterialOptions(props) {
 
     function dropDownChangeHandler(event){
-        props.onChoiceChange(event.target.value)
+        props.onChoiceChange(event.target.value, props.bodyPart)
     }
     
 
