@@ -50,6 +50,9 @@ function EnchantmentApplier(props){
         }
     }
 
+    function EnchantmentSender(){
+        props.enchantInfoFetcher(enchantments)
+    }
 
     let enchantments={
         '1st':['None', 'I'],
@@ -63,7 +66,7 @@ function EnchantmentApplier(props){
 
 
     return(
-        <React.Fragment>
+        <div onChange={EnchantmentSender}>
             <div>Enchantment</div>
             <div>
                 <EnchantmentOptions chosen={FilteredEnchantment} onChoiceChange={EnchantmentChangeHandler} section='1st'/>
@@ -83,7 +86,10 @@ function EnchantmentApplier(props){
             </div>
                        
                                             
-        </React.Fragment>
+        </div>
     )
     
 }
+
+
+export default EnchantmentApplier
