@@ -22,7 +22,7 @@ function MaterialOptions(props) {
         <select value={props.chosen} onChange={dropDownChangeHandler}>
             <option value="None"></option>
             <option value="Leather"></option>
-            <option value="Chain"></option>
+            <option value="Chainmail"></option>
             <option value="Iron"></option>
             <option value="Gold"></option>
             <option value="Diamond"></option>

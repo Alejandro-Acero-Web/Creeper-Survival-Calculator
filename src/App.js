@@ -5,6 +5,7 @@ import DamageApplier from "./components/DamageApplier/DamageApplier";
 import DamageReducer from "./components/DamageReducer/DamageReducer";
 import SurvivalCalculator from "./components/SurvivalCalculator/SurvivalCalculator";
 
+
 function App() {
 
   const [SelectedDamage, setDamage] = useState(43.5)
@@ -15,7 +16,7 @@ function App() {
       setDamage(22)
     }
     else if (ChosenDamage === "Normal"){
-      setDamage(43.5)
+      setDamage(43)
     }
     else if (ChosenDamage === "Hard"){
       setDamage(64)
@@ -47,6 +48,7 @@ function App() {
       <DamageReducer onProtectionChange={ProtectionChangeHandler}></DamageReducer>
       <DamageApplier onDifficultySelection={DamageChangeHandler}></DamageApplier>
       <SurvivalCalculator protectionParameters={SelectedProtections} damageParameters={SelectedDamage} onCalculate={ProtectionRequest}></SurvivalCalculator>
+      
       
     </div>
   );
