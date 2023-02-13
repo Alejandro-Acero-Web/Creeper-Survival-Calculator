@@ -18,7 +18,7 @@ function MaterialOptions(props) {
 
     return(
         
-        <React.Fragment>
+        <div>
         <select value={props.chosen} onChange={dropDownChangeHandler}>
             <option value="None"></option>
             <option value="Leather"></option>
@@ -28,8 +28,8 @@ function MaterialOptions(props) {
             <option value="Diamond"></option>
             <option value="Netherite"></option>
         </select>
-        <MaterialVisualizer bodyPart={props.bodyPart}/>
-        </React.Fragment>
+        <MaterialVisualizer bodyPart={props.bodyPart} material={props.chosen}/>
+        </div>
     )
 
 }
