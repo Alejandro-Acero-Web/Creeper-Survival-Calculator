@@ -10,10 +10,10 @@ function EnchantmentMagnitude(props){
 
     return(
         <select value={props.chosen} onChange={dropDownChangeHandler}>
-            <option value="I"></option>
-            <option value="II"></option>
-            <option value="III"></option>
-            <option value="IV"></option>
+            <option value="I">I</option>
+            <option value="II">II</option>
+            <option value="III">III</option>
+            <option value="IV">IV</option>
         </select>
     )
 }

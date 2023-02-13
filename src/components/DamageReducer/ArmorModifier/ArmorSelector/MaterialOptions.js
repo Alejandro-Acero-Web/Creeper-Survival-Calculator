@@ -20,13 +20,13 @@ function MaterialOptions(props) {
         
         <div>
         <select value={props.chosen} onChange={dropDownChangeHandler}>
-            <option value="None"></option>
-            <option value="Leather"></option>
-            <option value="Chainmail"></option>
-            <option value="Iron"></option>
-            <option value="Gold"></option>
-            <option value="Diamond"></option>
-            <option value="Netherite"></option>
+            <option value="None">None</option>
+            <option value="Leather">Leather</option>
+            <option value="Chainmail">Chainmail</option>
+            <option value="Iron">Iron</option>
+            <option value="Gold">Gold</option>
+            <option value="Diamond">Diamond</option>
+            <option value="Netherite">Netherite</option>
         </select>
         <MaterialVisualizer bodyPart={props.bodyPart} material={props.chosen}/>
         </div>

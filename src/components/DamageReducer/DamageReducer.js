@@ -1,17 +1,22 @@
 import React from "react";
 import EnchantmentApplier from "./EnchantmentSelector/EnchantmentApplier";
 import MaterialSelector from "./ArmorModifier/ArmorSelector/MaterialSelector";
+import './DamageReducer.css'
+
+
+let protectorObject={
+    'head':['none', 'none', 'I'],
+    'chest':['none', 'none', 'I'],
+    'leggings':['none', 'none', 'I'],
+    'boots':['none', 'none', 'I']
+}
+
 
 function DamageReducer(props){
 
 
 
-    let protectorObject={
-        'head':['none', 'none', 'I'],
-        'chest':['none', 'none', 'I'],
-        'leggings':['none', 'none', 'I'],
-        'boots':['none', 'none', 'I']
-    }
+   
 
 
     function EnchantFetchHandler(enchantments){
@@ -33,7 +38,7 @@ function DamageReducer(props){
     }
 
     return(
-        <div>
+        <div className="reducer">
             <MaterialSelector materialInfoFetcher={MaterialFetchHandler}/>
             <EnchantmentApplier enchantInfoFetcher={EnchantFetchHandler}/>
         </div>

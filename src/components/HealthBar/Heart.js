@@ -2,6 +2,7 @@ import React from "react";
 import EmptyHeart from './EmptyHeart.png'
 import HalfHeart from './HalfHeart.png'
 import FullHeart from './FullHeart.png'
+import './Heart.css'
 
 function Heart(props){
     /* <img src={logo} className="App-logo" alt="logo" />
@@ -15,18 +16,18 @@ function Heart(props){
           rel="noopener noreferrer" */
           
     let source = ''
-    if (props.filler===0){
+    if (props.filler <= 0){
         source = EmptyHeart
     }
     else if (props.filler === 0.5){
         source = HalfHeart
     }
-    else if (props.filler === 1){
+    else if (props.filler >= 1){
         source = FullHeart
     }
 
     return(
-        <img src={source} alt='heart'/>
+        <img className='heartImg' src={source} alt='heart'/>
     )
 
 }

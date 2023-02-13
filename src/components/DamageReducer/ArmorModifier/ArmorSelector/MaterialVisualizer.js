@@ -29,17 +29,86 @@ import netheriteBoots from './ASSETS/Netherite/netheriteBoots.png'
 
 function MaterialVisualizer(props){
     let src = ''
+    let material = props.material
     if (props.bodyPart === 'head'){
-        src = 'head'
+        if (material === 'Leather'){
+            src = leatherHelmet
+        }
+        else if (material === 'Chainmail'){
+            src = chainmailHelmet
+        }
+        else if (material === 'Iron'){
+            src = ironHelmet
+        }
+        else if (material === 'Gold'){
+            src = goldenHelmet
+        }
+        else if (material === 'Diamond'){
+            src = diamondHelmet
+        }
+        else if (material === 'Netherite'){
+            src = netheriteHelmet
+        }
     }
     else if(props.bodyPart === 'chest'){
-        src= 'chest'
+        if (material === 'Leather'){
+            src = leatherChestplate
+        }
+        else if (material === 'Chainmail'){
+            src = chainmailChestplate
+        }
+        else if (material === 'Iron'){
+            src = ironChestplate
+        }
+        else if (material === 'Gold'){
+            src = goldenChestplate
+        }
+        else if (material === 'Diamond'){
+            src = diamondChestplate
+        }
+        else if (material === 'Netherite'){
+            src = netheriteChestplate
+        }
     }
     else if(props.bodyPart === 'leggings'){
-        src= 'leggings'
+        if (material === 'Leather'){
+            src = leatherLeggings
+        }
+        else if (material === 'Chainmail'){
+            src = chainmailLeggings
+        }
+        else if (material === 'Iron'){
+            src = ironLeggings
+        }
+        else if (material === 'Gold'){
+            src = goldenLeggings
+        }
+        else if (material === 'Diamond'){
+            src = diamondLeggings
+        }
+        else if (material === 'Netherite'){
+            src = netheriteLeggings
+        }
     }
     else if(props.bodyPart === 'boots'){
-        src= 'boots'
+        if (material === 'Leather'){
+            src = leatherBoots
+        }
+        else if (material === 'Chainmail'){
+            src = chainmailBoots
+        }
+        else if (material === 'Iron'){
+            src = ironBoots
+        }
+        else if (material === 'Gold'){
+            src = goldenBoots
+        }
+        else if (material === 'Diamond'){
+            src = diamondBoots
+        }
+        else if (material === 'Netherite'){
+            src = netheriteBoots
+        }
     }
     return(
         <img src={src}></img>

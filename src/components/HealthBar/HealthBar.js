@@ -1,11 +1,12 @@
 import React from "react";
 import Heart from "./Heart";
+import './HealthBar.css'
 
 
 function HealthBar(props){
     let totalHealth = (props.health)/2
     return(
-        <div>
+        <div className="healthbar">
             <Heart filler={totalHealth}/>
             <Heart filler={totalHealth-1}/>
             <Heart filler={totalHealth-2}/>

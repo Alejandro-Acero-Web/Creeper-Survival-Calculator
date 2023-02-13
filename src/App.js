@@ -1,12 +1,21 @@
 // import logo from './logo.svg';
-// import './App.css';
+import './App.css';
 import React, { useState } from "react";
 import DamageApplier from "./components/DamageApplier/DamageApplier";
 import DamageReducer from "./components/DamageReducer/DamageReducer";
 import SurvivalCalculator from "./components/SurvivalCalculator/SurvivalCalculator";
 
 
+let protectionConditions ={
+  'head':['none', 'none', 'I'],
+  'chest':['none', 'none', 'I'],
+  'leggings':['none', 'none', 'I'],
+  'boots':['none', 'none', 'I']
+}
+
 function App() {
+
+  
 
   const [SelectedDamage, setDamage] = useState(43.5)
   const [SelectedProtections, setProtection] = useState(protectionConditions)
@@ -23,12 +32,7 @@ function App() {
     }
   }
 
-  let protectionConditions ={
-    'head':['none', 'none', 'I'],
-    'chest':['none', 'none', 'I'],
-    'leggings':['none', 'none', 'I'],
-    'boots':['none', 'none', 'I']
-  }
+  
 
   function ProtectionChangeHandler(protection){
     protectionConditions = protection
@@ -44,9 +48,11 @@ function App() {
 
 
   return (
-    <div className="">
+    <div className="main">
+      <div className="reducerApplier">
       <DamageReducer onProtectionChange={ProtectionChangeHandler}></DamageReducer>
       <DamageApplier onDifficultySelection={DamageChangeHandler}></DamageApplier>
+      </div>
       <SurvivalCalculator protectionParameters={SelectedProtections} damageParameters={SelectedDamage} onCalculate={ProtectionRequest}></SurvivalCalculator>
       
       

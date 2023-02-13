@@ -157,6 +157,7 @@ function SurvivalCalculator(props){
             roundedHealth = 1
         }
         setHealth(roundedHealth)
+        console.log(roundedHealth)
 
         
         
