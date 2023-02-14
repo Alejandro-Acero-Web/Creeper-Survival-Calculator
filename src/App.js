@@ -7,17 +7,17 @@ import SurvivalCalculator from "./components/SurvivalCalculator/SurvivalCalculat
 
 
 let protectionConditions ={
-  'head':['none', 'none', 'I'],
-  'chest':['none', 'none', 'I'],
-  'leggings':['none', 'none', 'I'],
-  'boots':['none', 'none', 'I']
+  'head':['Diamond', 'none', 'I'],
+  'chest':['Diamond', 'none', 'I'],
+  'leggings':['Diamond', 'none', 'I'],
+  'boots':['Diamond', 'none', 'I']
 }
 
 function App() {
 
   
 
-  const [SelectedDamage, setDamage] = useState(43.5)
+  const [SelectedDamage, setDamage] = useState(43)
   const [SelectedProtections, setProtection] = useState(protectionConditions)
 
   function DamageChangeHandler(ChosenDamage){

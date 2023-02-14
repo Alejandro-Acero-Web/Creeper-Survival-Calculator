@@ -4,10 +4,10 @@ import MaterialOptions from "./MaterialOptions"
 
 
 let materialSelections ={
-    'head':'none',
-    'chest':'none',
-    'leggings':'none',
-    'boots':'none'
+    'head':'Diamond',
+    'chest':'Diamond',
+    'leggings':'Diamond',
+    'boots':'Diamond'
 }
 
 

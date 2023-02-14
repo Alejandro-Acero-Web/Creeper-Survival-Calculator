@@ -10,6 +10,7 @@ function SurvivalCalculator(props){
         props.onCalculate()
         let damage = props.damageParameters
         let protectObject = props.protectionParameters
+        console.log(`Protect: ${JSON.stringify(protectObject)}`)
         let keys = Object.keys(protectObject)
         let defensePoints = 0
         let toughness = 0
@@ -27,6 +28,7 @@ function SurvivalCalculator(props){
                         defensePoints += 2
                     }
                     else if (lowered === 'diamond'){
+
                         defensePoints += 3
                         toughness += 2
                     }
@@ -133,12 +135,15 @@ function SurvivalCalculator(props){
             }
             
         }
+        console.log(`defensepoints: ${defensePoints}`)
+        console.log(`toughness: ${toughness}`)
         if (enchantmentPercentage>80){
             enchantmentPercentage = 80
         }
+        console.log(`enchantmentPercentage: ${enchantmentPercentage}`)
         
         let divisionValue = 0
-        if((defensePoints/5)>(defensePoints-((damage*4)/(toughness+8)))){
+        if((defensePoints/5)>(defensePoints-((damage*4)/(toughness+8))) || ((defensePoints/5)===(defensePoints-((damage*4)/(toughness+8))))) {
             divisionValue = (defensePoints/5)
         }
         else if((defensePoints/5)<(defensePoints-((damage*4)/(toughness+8)))){
@@ -148,9 +153,12 @@ function SurvivalCalculator(props){
         let healthPoints = 20
         
         let totalDamage = damage*(1-((divisionValue)/25))
+        console.log(`totaldamage: ${totalDamage}`)
         let finalDamage = totalDamage*(1-(enchantmentPercentage/100))
+        console.log(`finaldamage: ${finalDamage}`)
         
         let remainingHealth = healthPoints - finalDamage
+        console.log(`remaining non rounded: ${remainingHealth}`)
         let roundedHealth = Math.round(remainingHealth)
         
         if (remainingHealth>0 && remainingHealth<1){
