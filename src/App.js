@@ -17,7 +17,7 @@ function App() {
 
   
 
-  const [SelectedDamage, setDamage] = useState(43)
+  const [SelectedDamage, setDamage] = useState(22)
   const [SelectedProtections, setProtection] = useState(protectionConditions)
 
   function DamageChangeHandler(ChosenDamage){
@@ -34,13 +34,13 @@ function App() {
 
   
 
-  function ProtectionChangeHandler(protection){
-    protectionConditions = protection
-  }
-
-  function ProtectionRequest(){
+  function ProtectionChangeHandler(protectionConditions){
     setProtection(protectionConditions)
   }
+
+  // function ProtectionRequest(){
+  //   setProtection(protectionConditions)
+  // }
 
 
 
@@ -53,7 +53,7 @@ function App() {
       <DamageReducer onProtectionChange={ProtectionChangeHandler}></DamageReducer>
       <DamageApplier onDifficultySelection={DamageChangeHandler}></DamageApplier>
       </div>
-      <SurvivalCalculator protectionParameters={SelectedProtections} damageParameters={SelectedDamage} onCalculate={ProtectionRequest}></SurvivalCalculator>
+      <SurvivalCalculator protectionParameters={SelectedProtections} damageParameters={SelectedDamage} ></SurvivalCalculator>
       
       
     </div>

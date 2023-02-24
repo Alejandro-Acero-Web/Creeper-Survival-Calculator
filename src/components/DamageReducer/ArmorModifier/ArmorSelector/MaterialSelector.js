@@ -1,6 +1,7 @@
 
 import React, { useState } from "react"
 import MaterialOptions from "./MaterialOptions"
+import './MaterialSelector.css'
 
 
 let materialSelections ={
@@ -62,7 +63,7 @@ function MaterialSelector(props){
 
 
     return(
-        <div onChange={MaterialSender}>
+        <div className="armor" onChange={MaterialSender}>
             <div>Armor material</div>
             <MaterialOptions chosen={FilteredMaterial} onChoiceChange={MaterialChangeHandler} bodyPart='head'/>
             <MaterialOptions chosen={FilteredMaterial2} onChoiceChange={MaterialChangeHandler2} bodyPart='chest'/>

@@ -7,8 +7,9 @@ function SurvivalCalculator(props){
     const [CalculatedHealth, setHealth] = useState(20)
 
     function CalculateHandler(){
-        props.onCalculate()
+        // props.onCalculate()
         let damage = props.damageParameters
+        console.log(`Selected damage: ${damage}`)
         let protectObject = props.protectionParameters
         console.log(`Protect: ${JSON.stringify(protectObject)}`)
         let keys = Object.keys(protectObject)

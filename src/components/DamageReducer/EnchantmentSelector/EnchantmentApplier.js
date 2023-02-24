@@ -43,7 +43,7 @@ function EnchantmentApplier(props){
             enchantments["4th"].splice(0,1,ChosenEnchantment)
             
         }
-        console.log(enchantments)
+        console.log(`Enchantments in enchantment Applier: ${JSON.stringify(enchantments)}`)
     }
     function enchantmentMagnitudeEditor(ChosenMagnitude, section){
         if (section === '1st'){
@@ -61,7 +61,7 @@ function EnchantmentApplier(props){
             enchantments["4th"].splice(1,1,ChosenMagnitude)
             
         }
-        console.log(enchantments)
+        console.log(`Enchantment magnitudes in enchnatment Applier: ${JSON.stringify(enchantments)}`)
     }
 
     function EnchantmentChangeHandler(ChosenEnchantment, section){
