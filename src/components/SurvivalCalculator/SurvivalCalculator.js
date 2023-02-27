@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import HealthBar from "../HealthBar/HealthBar";
+import './SurvivalCalculator.css'
 
 
 function SurvivalCalculator(props){
@@ -174,8 +175,8 @@ function SurvivalCalculator(props){
     }
 
     return(
-    <div>
-    <button onClick={CalculateHandler}>Calculate</button>
+    <div className="calculator">
+    <button className="calcbutton" onClick={CalculateHandler}>Calculate</button>
     <HealthBar health={CalculatedHealth}></HealthBar>
     </div>
     )

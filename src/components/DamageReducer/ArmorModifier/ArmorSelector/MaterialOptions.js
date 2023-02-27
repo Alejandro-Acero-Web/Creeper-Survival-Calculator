@@ -1,6 +1,6 @@
 import React from "react"
 import MaterialVisualizer from "./MaterialVisualizer"
-
+import './MaterialOptions.css'
 
 
 
@@ -18,8 +18,8 @@ function MaterialOptions(props) {
 
     return(
         
-        <div>
-        <select value={props.chosen} onChange={dropDownChangeHandler}>
+        <div className="matSelectWrapper">
+        <select className="matSelect" value={props.chosen} onChange={dropDownChangeHandler}>
             <option value="None">None</option>
             <option value="Leather">Leather</option>
             <option value="Chainmail">Chainmail</option>

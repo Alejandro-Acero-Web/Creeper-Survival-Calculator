@@ -64,7 +64,7 @@ function MaterialSelector(props){
 
     return(
         <div className="armor" onChange={MaterialSender}>
-            <div>Armor material</div>
+            <h1>Armor material</h1>
             <MaterialOptions chosen={FilteredMaterial} onChoiceChange={MaterialChangeHandler} bodyPart='head'/>
             <MaterialOptions chosen={FilteredMaterial2} onChoiceChange={MaterialChangeHandler2} bodyPart='chest'/>
             <MaterialOptions chosen={FilteredMaterial3} onChoiceChange={MaterialChangeHandler3} bodyPart='leggings'/>

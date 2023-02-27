@@ -49,6 +49,7 @@ function App() {
 
   return (
     <div className="main">
+      <h1 className='title'>Creeper Survival Calculator</h1>
       <div className="reducerApplier">
       <DamageReducer onProtectionChange={ProtectionChangeHandler}></DamageReducer>
       <DamageApplier onDifficultySelection={DamageChangeHandler}></DamageApplier>

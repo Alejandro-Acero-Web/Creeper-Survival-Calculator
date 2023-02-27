@@ -1,0 +1,16 @@
+.matSelect{
+
+  display: flex;
+  width: 8vw;
+  height: 3em;
+  border-radius: .25em;
+  overflow: hidden;
+  text-align: center;
+}
+
+
+.matSelectWrapper{
+    display: flex;
+    align-items: center;
+  
+}

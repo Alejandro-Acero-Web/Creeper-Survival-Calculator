@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import EnchantmentOptions from "./EnchantmentOptions";
 import EnchantmentMagnitude from "./EnchantmentMagnitude";
+import './EnchantmentApplier.css'
 
 
 let enchantments={
@@ -125,8 +126,8 @@ function EnchantmentApplier(props){
 
 
     return(
-        <div onChange={EnchantmentSender}>
-            <div>Enchantment</div>
+        <div className="enchantments" onChange={EnchantmentSender}>
+            <h1>Enchantment</h1>
             <div>
                 <EnchantmentOptions chosen={FilteredEnchantment} onChoiceChange={EnchantmentChangeHandler} section='1st'/>
                 <EnchantmentMagnitude chosen={FilteredMagnitude} onChoiceChange={MagnitudeChangeHandler} section='1st'/>
@@ -143,6 +144,7 @@ function EnchantmentApplier(props){
                 <EnchantmentOptions chosen={FilteredEnchantment4} onChoiceChange={EnchantmentChangeHandler4} section='4th'/>
                 <EnchantmentMagnitude chosen={FilteredMagnitude4} onChoiceChange={MagnitudeChangeHandler4} section='4th'/>
             </div>
+            
                        
                                             
         </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import './MaterialVisualizer.css'
 import leatherBoots from './ASSETS/Leather/LeatherBoots.png'
 import leatherChestplate from './ASSETS/Leather/leatherChestplate.png'
 import leatherHelmet from './ASSETS/Leather/leatherHelmet.png'
@@ -111,7 +112,7 @@ function MaterialVisualizer(props){
         }
     }
     return(
-        <img src={src}></img>
+        <img className='mats' src={src} alt='Mats'></img>
     )
 }
 
