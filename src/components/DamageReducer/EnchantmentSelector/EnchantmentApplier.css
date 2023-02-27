@@ -12,4 +12,6 @@
 
 #enchtitle{
     margin-bottom: -4vh;
+    outline: 4px solid;
+    outline-offset: 10px;
 }

@@ -37,7 +37,13 @@
   }
 } */
 
+@font-face {
+  font-family: 'Minecraft';
+  src: url("./components/DamageReducer/ArmorModifier/ArmorSelector/ASSETS/MinecraftTen-VGORe.ttf") format("truetype")
+}
+
 .main{
+  font-family: 'Minecraft';
   display: flex;
   flex-direction: column;
   
