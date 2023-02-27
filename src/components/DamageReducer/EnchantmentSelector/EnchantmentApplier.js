@@ -127,20 +127,20 @@ function EnchantmentApplier(props){
 
     return(
         <div className="enchantments" onChange={EnchantmentSender}>
-            <h1>Enchantment</h1>
-            <div>
+            <h1 id="enchtitle">Enchantment</h1>
+            <div className="enchantmentOrganizer">
                 <EnchantmentOptions chosen={FilteredEnchantment} onChoiceChange={EnchantmentChangeHandler} section='1st'/>
                 <EnchantmentMagnitude chosen={FilteredMagnitude} onChoiceChange={MagnitudeChangeHandler} section='1st'/>
             </div>
-            <div>
+            <div className="enchantmentOrganizer">
                 <EnchantmentOptions chosen={FilteredEnchantment2} onChoiceChange={EnchantmentChangeHandler2} section='2nd'/>
                 <EnchantmentMagnitude chosen={FilteredMagnitude2} onChoiceChange={MagnitudeChangeHandler2} section='2nd'/>
             </div>
-            <div>
+            <div className="enchantmentOrganizer">
                  <EnchantmentOptions chosen={FilteredEnchantment3} onChoiceChange={EnchantmentChangeHandler3} section='3rd'/>
                  <EnchantmentMagnitude chosen={FilteredMagnitude3} onChoiceChange={MagnitudeChangeHandler3} section='3rd'/>
             </div>
-            <div>
+            <div className="enchantmentOrganizer">
                 <EnchantmentOptions chosen={FilteredEnchantment4} onChoiceChange={EnchantmentChangeHandler4} section='4th'/>
                 <EnchantmentMagnitude chosen={FilteredMagnitude4} onChoiceChange={MagnitudeChangeHandler4} section='4th'/>
             </div>

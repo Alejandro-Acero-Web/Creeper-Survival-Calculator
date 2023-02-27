@@ -1,4 +1,5 @@
 import React from "react";
+import "./EnchantmentMagnitude.css"
 
 function EnchantmentMagnitude(props){
 
@@ -9,7 +10,7 @@ function EnchantmentMagnitude(props){
 
 
     return(
-        <select value={props.chosen} onChange={dropDownChangeHandler}>
+        <select className="magSelector" value={props.chosen} onChange={dropDownChangeHandler}>
             <option value="I">I</option>
             <option value="II">II</option>
             <option value="III">III</option>

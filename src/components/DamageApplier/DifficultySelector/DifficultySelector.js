@@ -18,7 +18,7 @@ function DifficultySelector(props) {
   return (
     <div className="difficulty">
       <h1>Select difficulty</h1>
-      <select value={props.selected} onChange={dropDownChangeHandler}>
+      <select className='difSelect' value={props.selected} onChange={dropDownChangeHandler}>
         <option value="Easy">Easy</option>
         <option value="Normal">Normal</option>
         <option value="Hard">Hard</option>

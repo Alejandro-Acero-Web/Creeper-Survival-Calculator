@@ -1,6 +1,5 @@
-.matSelect{
-
-  display: flex;
+.enchSelect{
+    display: flex;
   width: 8vw;
   height: 3em;
   border-radius: .25em;
@@ -9,11 +8,4 @@
   cursor:pointer;
   background: #5c6664;
   color: white;
-}
-
-
-.matSelectWrapper{
-    display: flex;
-    align-items: center;
-  
 }

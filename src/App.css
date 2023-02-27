@@ -47,6 +47,7 @@
     height: 100%;
     left: 0;
     top: 0;
+    text-transform: uppercase
 }
 .reducerApplier{
   display: flex;

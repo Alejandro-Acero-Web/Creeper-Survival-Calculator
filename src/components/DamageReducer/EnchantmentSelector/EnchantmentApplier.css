@@ -2,5 +2,14 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-bottom: 15px;
+    padding-bottom: 3vh;
+}
+
+.enchantmentOrganizer{
+    display: flex;
+    justify-content: space-around;
+}
+
+#enchtitle{
+    margin-bottom: -4vh;
 }

@@ -1,5 +1,5 @@
 import React from "react"
-
+import './EnchantmentOptions.css'
 
 
 function EnchantmentOptions(props){
@@ -11,7 +11,7 @@ function EnchantmentOptions(props){
 
 
     return(
-        <select value={props.chosen} onChange={dropDownChangeHandler}>
+        <select className="enchSelect" value={props.chosen} onChange={dropDownChangeHandler}>
             <option value="None">None</option>
             <option value="Protection">Protection</option>
             <option value="Blast Protection">Blast Protection</option>
