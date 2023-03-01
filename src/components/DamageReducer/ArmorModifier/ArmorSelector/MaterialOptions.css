@@ -1,7 +1,7 @@
 .matSelect{
 
   display: flex;
-  width: 8vw;
+  width: 10vw;
   height: 3em;
   border-radius: .25em;
   overflow: hidden;
@@ -9,6 +9,8 @@
   cursor:pointer;
   background: #5c6664;
   color: white;
+  font-family: 'Minecraft';
+  font-size: inherit;
   
   
 }

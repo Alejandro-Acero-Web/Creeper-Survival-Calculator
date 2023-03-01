@@ -64,3 +64,14 @@
 .title{
   text-align: center;
 }
+
+
+@media (max-width: 1100px) {
+  .reducerApplier{
+    flex-direction: column;
+  }
+  .main{
+    overflow: scroll;
+    justify-content: inherit;
+  }
+}

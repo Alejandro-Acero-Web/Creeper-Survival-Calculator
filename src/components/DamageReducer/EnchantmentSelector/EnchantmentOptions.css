@@ -8,4 +8,6 @@
   cursor:pointer;
   background: #5c6664;
   color: white;
+  font-family: 'Minecraft';
+  font-size: inherit;
 }

@@ -4,3 +4,9 @@
     justify-content: space-around;
     
 }
+
+@media (max-width: 1100px) {
+    .reducer{
+        flex-direction: column;
+    }
+  }
