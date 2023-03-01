@@ -21,3 +21,14 @@
     align-items: center;
   
 }
+
+@media (max-width: 1100px) {
+  .matSelectWrapper{
+      justify-content: space-evenly;
+  }
+  .matSelect{
+    width: fit-content;
+    font-size: medium;
+    height: 2em;
+  }
+}
