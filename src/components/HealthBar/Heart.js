@@ -5,15 +5,7 @@ import FullHeart from './FullHeart.png'
 import './Heart.css'
 
 function Heart(props){
-    /* <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer" */
+ 
           
     let source = ''
     if (props.filler <= 0){
@@ -27,7 +19,9 @@ function Heart(props){
     }
 
     return(
+        <div className="heartImgWrapper">
         <img className='heartImg' src={source} alt='heart'/>
+        </div>
     )
 
 }

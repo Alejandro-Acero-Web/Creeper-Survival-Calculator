@@ -8,7 +8,7 @@ function SurvivalCalculator(props){
     const [CalculatedHealth, setHealth] = useState(20)
 
     function CalculateHandler(){
-        // props.onCalculate()
+        
         let damage = props.damageParameters
         console.log(`Selected damage: ${damage}`)
         let protectObject = props.protectionParameters
@@ -38,6 +38,7 @@ function SurvivalCalculator(props){
                         defensePoints += 3
                         toughness += 3
                     }
+                    
                 }
                 if (keys[key] === 'chest'){
                     if (lowered === 'leather'){
@@ -99,7 +100,7 @@ function SurvivalCalculator(props){
         
                 //time for the enchantments
                 
-                if (lowered === 'protection'){
+                if (lowered === 'protection' && protectObject[`${keys[key]}`][(parseInt(part, 10)-1)] !== 'None') {
                     if (magnitude === 'I'){
                         enchantmentPercentage += 4
                     }
@@ -114,7 +115,7 @@ function SurvivalCalculator(props){
                     }
                     
                 }
-                if (lowered === 'blast protection'){
+                if (lowered === 'blast protection' && protectObject[`${keys[key]}`][(parseInt(part, 10)-1)] !== 'None'){
                     if (magnitude === 'I'){
                         enchantmentPercentage += 8
                     }

@@ -1,5 +1,9 @@
 import React from 'react'
 import './MaterialVisualizer.css'
+import emptyBoots from './ASSETS/Empty/emptyBoots.png'
+import emptyLeggings from './ASSETS/Empty/emptyLegs.png'
+import emptyChestplate from './ASSETS/Empty/emptyChest.png'
+import emptyHelmet from './ASSETS/Empty/emptyHead.png'
 import leatherBoots from './ASSETS/Leather/LeatherBoots.png'
 import leatherChestplate from './ASSETS/Leather/leatherChestplate.png'
 import leatherHelmet from './ASSETS/Leather/leatherHelmet.png'
@@ -28,6 +32,7 @@ import netheriteBoots from './ASSETS/Netherite/netheriteBoots.png'
 
 
 
+
 function MaterialVisualizer(props){
     let src = ''
     let material = props.material
@@ -50,6 +55,9 @@ function MaterialVisualizer(props){
         else if (material === 'Netherite'){
             src = netheriteHelmet
         }
+        else if (material === 'None'){
+            src = emptyHelmet
+        }
     }
     else if(props.bodyPart === 'chest'){
         if (material === 'Leather'){
@@ -69,6 +77,9 @@ function MaterialVisualizer(props){
         }
         else if (material === 'Netherite'){
             src = netheriteChestplate
+        }
+        else if (material === 'None'){
+            src = emptyChestplate
         }
     }
     else if(props.bodyPart === 'leggings'){
@@ -90,6 +101,9 @@ function MaterialVisualizer(props){
         else if (material === 'Netherite'){
             src = netheriteLeggings
         }
+        else if (material === 'None'){
+            src = emptyLeggings
+        }
     }
     else if(props.bodyPart === 'boots'){
         if (material === 'Leather'){
@@ -109,6 +123,9 @@ function MaterialVisualizer(props){
         }
         else if (material === 'Netherite'){
             src = netheriteBoots
+        }
+        else if (material === 'None'){
+            src = emptyBoots
         }
     }
     return(

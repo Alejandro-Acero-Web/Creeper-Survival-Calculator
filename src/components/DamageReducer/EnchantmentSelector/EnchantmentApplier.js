@@ -44,7 +44,7 @@ function EnchantmentApplier(props){
             enchantments["4th"].splice(0,1,ChosenEnchantment)
             
         }
-        console.log(`Enchantments in enchantment Applier: ${JSON.stringify(enchantments)}`)
+        // console.log(`Enchantments in enchantment Applier: ${JSON.stringify(enchantments)}`)
     }
     function enchantmentMagnitudeEditor(ChosenMagnitude, section){
         if (section === '1st'){
@@ -62,7 +62,7 @@ function EnchantmentApplier(props){
             enchantments["4th"].splice(1,1,ChosenMagnitude)
             
         }
-        console.log(`Enchantment magnitudes in enchnatment Applier: ${JSON.stringify(enchantments)}`)
+        // console.log(`Enchantment magnitudes in enchnatment Applier: ${JSON.stringify(enchantments)}`)
     }
 
     function EnchantmentChangeHandler(ChosenEnchantment, section){
@@ -140,7 +140,7 @@ function EnchantmentApplier(props){
                  <EnchantmentOptions chosen={FilteredEnchantment3} onChoiceChange={EnchantmentChangeHandler3} section='3rd'/>
                  <EnchantmentMagnitude chosen={FilteredMagnitude3} onChoiceChange={MagnitudeChangeHandler3} section='3rd'/>
             </div>
-            <div className="enchantmentOrganizer">
+            <div id="lastEnch" className="enchantmentOrganizer">
                 <EnchantmentOptions chosen={FilteredEnchantment4} onChoiceChange={EnchantmentChangeHandler4} section='4th'/>
                 <EnchantmentMagnitude chosen={FilteredMagnitude4} onChoiceChange={MagnitudeChangeHandler4} section='4th'/>
             </div>

@@ -11,3 +11,15 @@
     font-family: 'Minecraft';
     font-size: inherit;
 }
+
+
+
+@media (max-width: 1100px) {
+    .magSelector{
+      width: fit-content;
+      font-size: medium;
+      height: 2em;
+    }
+    
+    
+  }

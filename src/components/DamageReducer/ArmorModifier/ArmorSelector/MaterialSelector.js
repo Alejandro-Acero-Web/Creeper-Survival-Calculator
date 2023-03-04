@@ -34,7 +34,7 @@ function MaterialSelector(props){
         else if (bodyPart === 'boots'){
             materialSelections['boots']=ChosenMaterial
         }
-        console.log(materialSelections)
+        // console.log(materialSelections)
     }
    
 

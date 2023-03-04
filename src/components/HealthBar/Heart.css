@@ -1,3 +1,26 @@
 .heartImg{
     max-height: 4vw;
 }
+
+
+@media (max-width:1100px){
+    .heartImg{
+        max-height: 11vw;
+    }
+    .heartImgWrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+@media (max-width: 500px) {
+    .heartImg{
+        max-height: 16vw;
+    }
+    
+    
+    
+  }
