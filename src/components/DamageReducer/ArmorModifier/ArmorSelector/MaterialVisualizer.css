@@ -16,3 +16,11 @@
         max-width: 16vw;
     }
   }
+
+  @media (min-width: 2200px) {
+    .mats{
+        max-width: 200px;
+    }
+  }
+
+
