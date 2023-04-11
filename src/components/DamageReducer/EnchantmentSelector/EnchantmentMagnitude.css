@@ -1,6 +1,5 @@
 .magSelector{
     display: flex;
-    width: 2vw;
     height: 3em;
     border-radius: .25em;
     overflow: hidden;
